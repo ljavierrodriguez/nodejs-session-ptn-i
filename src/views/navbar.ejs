@@ -1,0 +1,18 @@
+<ul class="nav justify-content-center">
+    <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="/">Home</a>
+    </li>
+
+    <% if (!email){ %>
+        <li class="nav-item">
+            <a class="nav-link" href="/login">Login</a>
+        </li>
+    <% } else { %>
+        <li class="nav-item">
+            <a class="nav-link" href="/private">Private</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/logout">Logout</a>
+        </li>
+    <% } %>
+</ul>
